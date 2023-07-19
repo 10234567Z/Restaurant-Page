@@ -1,3 +1,6 @@
+import './style.css';
+import Logo from './Content/logo.png';
+
 let navBar = document.createElement('nav');
 
 let homeLink = document.createElement('a')
@@ -20,9 +23,10 @@ let supportLink = document.createElement('a')
 supportLink.href = '#';
 supportLink.innerHTML = "Support"
 
-// let logo = document.querySelector('img');
-// logo.src = "Content/logo.png";
-// logo.height = "200px";
-// logo.width = "200px"
-document.querySelector('.container').append(navBar);
+let logo = new Image();
+logo.src = Logo;
+logo.height = 200;
+logo.width = 200;
+logo.classList.add('logo');
+document.querySelector('.container').append(navBar,logo);
 navBar.append(homeLink,menuLink,locLink,aboutLink,supportLink);
