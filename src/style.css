@@ -102,6 +102,7 @@ a{
 .helpHead,.helpOptions{
     font-family: "Shantell Sans", cursive;
     align-self: center;
+    text-align: center;
 }
 
 @media screen and (max-width: 540px) {
