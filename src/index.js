@@ -3,6 +3,10 @@ import Logo from './Content/logo.png';
 import homeComponent from "./home.js"
 import menuComponent from "./menu.js"
 
+let container = document.createElement("div");
+container.classList.add('container');
+document.querySelector('body').appendChild(container);
+
 let navBar = document.createElement('nav');
 export let subContainer = document.createElement('div');
 subContainer.classList.add('subContainer')
@@ -37,7 +41,7 @@ logo.src = Logo;
 logo.height = 200;
 logo.width = 200;
 logo.classList.add('logo');
-document.querySelector('.container').append(navBar,subContainer);
+container.append(navBar,subContainer);
 navBar.append(homeLink,menuLink,locLink,aboutLink,supportLink);
 homeComponent();
 
