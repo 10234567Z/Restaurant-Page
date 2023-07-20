@@ -17,6 +17,8 @@ export default function components() {
     let gustavo = new Image();
     gustavo.src = Gustavo;
     gustavo.classList.add("gusHome");
+    gustavo.height = 300;
+    gustavo.width = 500;
 
     let introduction = document.createElement('p');
     introduction.classList.add('intro');

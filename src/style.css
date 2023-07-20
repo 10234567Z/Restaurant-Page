@@ -41,14 +41,15 @@ nav{
 }
 
 nav > a{
-    width: 95px;
+    width: 80px;
     height: 40px;
-    background-color:greenyellow;
+    background-color:#adff2f;
     display: flex;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
     font-family: 'Shantell Sans', cursive;
+    transition: all 0.5s ease-in-out;
 }
 
 a{
@@ -70,7 +71,7 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 400px;
     max-height: 300px;
     font-family: 'Shantell Sans', cursive;
     color:white;
@@ -92,7 +93,6 @@ a{
 
 .gusHome{
     border-radius: 13px;
-    margin-left: 20px;
 }
 
 .foodImage {
@@ -102,4 +102,18 @@ a{
 .helpHead,.helpOptions{
     font-family: "Shantell Sans", cursive;
     align-self: center;
+}
+
+@media screen and (max-width: 540px) {
+    .gusHome{
+        height: 175px;
+        width: 275px;
+    }
+    .intro{
+        width: 250px;
+    }
+    .logo{
+        height: 125px;
+        width: 125px;
+    }
 }

@@ -35,14 +35,24 @@ logo.classList.add('logo');
 container.append(navBar,subContainer);
 navBar.append(homeLink,menuLink,supportLink);
 homeComponent();
+homeLink.style.backgroundColor ="#2F6000";
 
 homeLink.addEventListener('click', e => {
     homeComponent();
+    homeLink.style.backgroundColor = "#2F6000";
+    menuLink.style.backgroundColor = "#adff2f";
+    supportLink.style.backgroundColor = "#adff2f";
 })
 menuLink.addEventListener('click' , e => {
     menuComponent();
+    homeLink.style.backgroundColor = "#adff2f";
+    menuLink.style.backgroundColor = "#2F6000";
+    supportLink.style.backgroundColor = "#adff2f";
 })
 
 supportLink.addEventListener('click' , e =>{
     supportComponent();
+    homeLink.style.backgroundColor = "#adff2f";
+    menuLink.style.backgroundColor = "#adff2f";
+    supportLink.style.backgroundColor = "#2F6000";
 })
