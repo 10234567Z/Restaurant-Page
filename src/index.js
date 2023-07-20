@@ -2,6 +2,7 @@ import './style.css';
 import Logo from './Content/logo.png';
 import homeComponent from "./home.js"
 import menuComponent from "./menu.js"
+import supportComponent from "./support.js"
 
 let container = document.createElement("div");
 container.classList.add('container');
@@ -40,4 +41,8 @@ homeLink.addEventListener('click', e => {
 })
 menuLink.addEventListener('click' , e => {
     menuComponent();
+})
+
+supportLink.addEventListener('click' , e =>{
+    supportComponent();
 })

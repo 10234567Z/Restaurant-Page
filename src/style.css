@@ -95,3 +95,8 @@ a{
 .foodImage {
     border-radius: 15px;
 }
+
+.helpHead,.helpOptions{
+    font-family: "Shantell Sans", cursive;
+    align-self: center;
+}
