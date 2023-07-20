@@ -21,16 +21,6 @@ menuLink.classList.add('menu')
 menuLink.href = '#menu';
 menuLink.innerHTML = "Menu"
 
-let locLink = document.createElement('a');
-locLink.classList.add('loc');
-locLink.href = '#locations';
-locLink.innerHTML = "Locations"
-
-let aboutLink = document.createElement('a');
-aboutLink.classList.add('about');
-aboutLink.href = '#about';
-aboutLink.innerHTML = "About"
-
 let supportLink = document.createElement('a');
 supportLink.classList.add('support');
 supportLink.href = '#support';
@@ -42,7 +32,7 @@ logo.height = 200;
 logo.width = 200;
 logo.classList.add('logo');
 container.append(navBar,subContainer);
-navBar.append(homeLink,menuLink,locLink,aboutLink,supportLink);
+navBar.append(homeLink,menuLink,supportLink);
 homeComponent();
 
 homeLink.addEventListener('click', e => {
